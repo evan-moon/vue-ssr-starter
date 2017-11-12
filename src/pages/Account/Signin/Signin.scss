@@ -1,0 +1,29 @@
+@import 'src/styles/utils/__module__';
+
+.logo {
+    text-align: center;
+    img[title="pixelstairs-logo"] {
+        width: 250px;
+        margin-bottom: 10px;
+        @include mq('sm') {
+            width: 150px;
+        }
+    }
+}
+
+.card--center-form {
+    input {
+        font-size: 14px;
+        padding: 0.75rem 1rem;
+        background: transparent;
+    }
+}
+
+.btn-link {
+    padding: $card-padding;
+    color: $grey-700;
+    text-align: right;
+    @include mq('sm') {
+        font-size: 14px;
+    }
+}

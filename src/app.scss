@@ -1,0 +1,17 @@
+/* Node modules */
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+/* /Node moduels */
+
+/* App modules */
+@import './styles/__module__';
+/* /App modules */
+
+/* Page Transition */
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .2s
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0
+}
+/* /Page Transition */

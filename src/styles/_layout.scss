@@ -1,0 +1,23 @@
+// APP LAYOUT
+
+#app-header {
+    &+#app-body {
+        padding-top: $global-header-height;
+    }
+}
+#app-body {
+    padding-bottom: $global-header-height;
+    min-height: 100vh;
+    background-color: $grey-50;
+}
+#app-footer {}
+
+// BOOTSTRAP GRID
+.container-fluid {
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+}

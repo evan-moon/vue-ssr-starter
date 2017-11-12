@@ -1,0 +1,33 @@
+/*
+    @name: _responsive-manager
+    @desc: 전체 어플리케이션의 반응형 디자인 브레이크포인트를 정의.
+           기본적으로 bootstrap의 정의를 따라간다.
+    @autor: Evan Moon
+    @created_at: 2017-06-20
+*/
+
+$breakpoints: (
+    'sm': (max-width: 767px),
+    'md': (max-width: 959px),
+    'lg': (max-width: 1139px)
+);
+
+@mixin mq($breakpoint) {
+    $raw-query: map-get($breakpoints, $breakpoint);
+
+    @if $raw-query {
+        $query: if(
+            type-of($raw-query) == 'string',
+            unquote($raw-query),
+            inspect($raw-query)
+        );
+
+        @media screen and #{$query} {
+            @content;
+        }
+    }
+    @else {
+        @error 'No value found for `#{$breakpoint}`.' +
+               'Please make sure it is defined in `#{$breakpoints}` map';
+    }
+}

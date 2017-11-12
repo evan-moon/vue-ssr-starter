@@ -1,0 +1,14 @@
+.card--center-form {
+    text-align: center;
+}
+
+.message {
+    margin-bottom: 30px;
+    h1[data-name="error-code"] {
+        font-weight: bold;
+        font-size: 80px;
+    }
+    h3[data-name="error-message"] {
+        font-size: 18px;
+    }
+}

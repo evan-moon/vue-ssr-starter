@@ -1,0 +1,12 @@
+@import 'src/styles/utils/__module__';
+
+.logo {
+    text-align: center;
+    img[title="pixelstairs-logo"] {
+        width: 250px;
+        margin-bottom: 10px;
+        @include mq('sm') {
+            width: 150px;
+        }
+    }
+}

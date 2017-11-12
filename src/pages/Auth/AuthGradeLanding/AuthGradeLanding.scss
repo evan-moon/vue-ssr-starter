@@ -1,0 +1,12 @@
+@import 'src/styles/utils/__module__';
+
+h1 {
+    margin-bottom: 40px;
+}
+div[data-name="result"] {}
+div[data-name="error"] {
+    h4 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,31 @@
+// @MIXIN
+
+@mixin ellipsis {
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    padding: 1px 0;
+}
+
+@mixin floatToCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin circleFrame($length) {
+    width: $length;
+    height: $length;
+    border-radius: 50%;
+    overflow: hidden;
+    background: {
+        size: cover;
+        position: 50% 50%;
+    }
+
+    img {
+        width: 100%;
+        vertical-align: middle;
+    }
+}

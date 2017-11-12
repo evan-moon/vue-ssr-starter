@@ -1,0 +1,12 @@
+.modal {
+    .modal-dialog {}
+    .modal-header {
+        button.close {
+            i {
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+    }
+    .modal-body {}
+}

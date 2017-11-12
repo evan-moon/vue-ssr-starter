@@ -1,0 +1,51 @@
+.card {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card.card--center-form {
+    @include floatToCenter;
+    background: transparent;
+    box-shadow: none;
+    @include mq('sm') {
+        transform: none;
+        top: auto;
+        left: auto;
+        margin-top: $global-header-height;
+    }
+    input {
+        font-size: 14px;
+        padding: $card-padding;
+        background: transparent;
+    }
+    div[data-section="form-desc"] {
+        margin-bottom: 40px;
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: lighter;
+            @include mq('sm') {
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+        p {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .btn[type="submit"] {
+        margin: 20px 0;
+        width: 100%;
+        background-color: $bluegrey-800;
+    }
+}

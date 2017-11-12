@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% for (var chunk of webpack.chunks) {
+        for (var file of chunk.files) {
+            if (file.match(/\.(js|css)$/)) { %>
+    <link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>">
+    <%     }
+        }
+    } %>
+    <!-- GA -->
+    <!-- <script>
+    if (location.origin.indexOf('pixelstairs.com') > -1 && (location.origin.indexOf('local') < 0 && location.origin.indexOf('dev') < 0)) {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-101164744-2', 'auto');
+        ga('send', 'pageview');
+    }
+    </script> -->
+    <!-- /GA -->
+    <style>[v-cloak] { display: none }</style>
+</head>
+<body>
+    <!--vue-ssr-outlet-->
+</body>
+<!-- Sentry :: Error Tracker -->
+<!-- <script src="https://cdn.ravenjs.com/3.17.0/angular/raven.min.js" crossorigin="anonymous"></script> -->
+<!-- <script>
+Raven.config('https://05bda1c506cc4422a152fce4800d1333@sentry.pixelstairs.com/4').install();
+</script> -->
+<!-- /Sentry :: Error Tracker -->
+</html>

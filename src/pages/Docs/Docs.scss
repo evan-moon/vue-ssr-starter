@@ -1,0 +1,102 @@
+@import 'src/styles/utils/__module__';
+
+.container.document {
+    $document-padding: 40px;
+    $document-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+
+    margin: $document-padding * 2 auto;
+
+    header {
+        margin-bottom: $document-padding;
+        nav.row {
+            background-color: $white;
+            box-shadow: $document-shadow;
+        }
+        nav>div {
+            text-align: center;
+            padding: 0;
+            .btn {
+                border: none;
+                border-radius: 0;
+                background-color: transparent;
+                color: $bluegrey-600;
+                box-shadow: none;
+                padding: $document-padding / 2;
+                font-weight: bold;
+                &.active {
+                    border-bottom: 5px solid $bluegrey-600;
+                }
+            }
+        }
+    }
+
+    div.row {
+        div[data-name="document"] {
+            $heading-size: 35px;
+            $sub-heading-size: 20px;
+            $content-size: 15px;
+
+            margin-bottom: $document-padding;
+            padding: $document-padding * 2 $document-padding;
+            background-color: $white;
+            box-shadow: $document-shadow;
+            @include mq('sm') {
+                padding: $document-padding $document-padding - 10px;
+            }
+
+            * {
+                font-size: $content-size;
+                font-weight: normal;
+                line-height: 1.6;
+                strong {
+                    font-weight: bold;
+                }
+            }
+
+            ol {
+                border: 1px dashed $grey-400;
+                padding: {
+                    left: $document-padding;
+                    right: $document-padding / 2;
+                    top: $document-padding / 2;
+                    bottom: $document-padding / 2;
+                }
+            }
+
+            section[data-name="title"] {
+                margin-top: 0;
+                margin-bottom: $document-padding;
+                padding-bottom: $document-padding;
+                border-bottom: 1px solid $grey-400;
+                h1 {
+                    font-size: $heading-size;
+                    font-weight: bold;
+                    margin-bottom: $document-padding;
+                    @include mq('sm') {
+                        font-size: $heading-size / 1.5;
+                    }
+                }
+                p {
+                    @include mq('sm') {
+                        font-size: $content-size - 2px;
+                    }
+                }
+            }
+
+            section {
+                margin: $document-padding * 2 0;
+                * {
+                    font-size: $content-size;
+                    @include mq('sm') {
+                        font-size: $content-size - 2px;
+                    }
+                }
+                h3 {
+                    font-size: $sub-heading-size;
+                    font-weight: bold;
+                    margin-bottom: $document-padding;
+                }
+            }
+        }
+    }
+}

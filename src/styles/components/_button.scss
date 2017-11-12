@@ -1,0 +1,78 @@
+.btn {
+    font-weight: lighter;
+    background-color: $bluegrey-900;
+    color: $white;
+    cursor: pointer;
+
+    @include mq('sm') {
+        font-size: 0.8rem;
+    }
+
+    &.active {
+        background-color: $bluegrey-900;
+    }
+    &.btn-round {
+        border-radius: 100px;
+    }
+    &.btn-border {
+        background: transparent;
+        border: 1px solid $bluegrey-900;
+        color: $grey-800;
+    }
+    &.btn-primary {
+        background-color: $blue;
+        border-color: $blue;
+    }
+
+    .loading-ico {
+        font-size: 14px;
+    }
+    span {
+        color: $white;
+    }
+}
+
+.float-btn {
+    $margin: 30px;
+    position: fixed;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    * {
+        color: $white;
+        vertical-align: middle;
+    }
+    &.top {
+        top: $margin;
+    }
+    &.bottom {
+        bottom: $margin;
+    }
+    &.right {
+        right: $margin;
+    }
+    &.left {
+        left: $margin;
+    }
+
+    i {
+        font-size: 20px;
+    }
+
+    @include mq('sm') {
+        &.top {
+            top: $margin / 2;
+        }
+        &.bottom {
+            bottom: $margin / 2;
+        }
+        &.right {
+            right: $margin / 2;
+        }
+        &.left {
+            left: $margin / 2;
+        }
+    }
+}

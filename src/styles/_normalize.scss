@@ -1,0 +1,36 @@
+/*
+    SCSS 초기화
+*/
+
+* {
+    font-family: 'helvetica', sans-serif ;
+    -webkit-font-smoothing: antialiased;
+    outline: none;
+    color: $grey-800;
+    font-weight: lighter;
+    &:focus {
+        outline: none;
+    }
+}
+
+ul {
+    padding: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+// Dev
+#webpack-hot-middleware-clientOverlay {
+    * {
+        color: $white;
+        font-family: Menlo, Consolas, monospace;
+    }
+}

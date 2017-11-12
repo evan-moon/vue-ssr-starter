@@ -1,0 +1,21 @@
+/*
+ * shame.scss는 우리가 자랑스럽게 여기지 않는 스타일을 작성하는 파일입니다.
+ * 관례에 따라 shame.scss에 스타일을 작성할 때는 왜 이 스타일을 작성했는 지에 대한
+ * 주석을 필수로 함께 작성해야하며, 이 파일에 작성된 모든 스타일은 '임시용'임을 명심하세요.
+ * 주석은 EXAMPLE의 형식과 동일하게 작성합니다.
+ *
+ * @author: Evan Moon
+ * @created_at: 2017-06-20
+ */
+
+/* @EXAMPLE 
+    @title: Nav 한정성 해결.
+    @author: Evan Moon
+    @desc: 누군가 헤더 코드에 ID를 사용하여 네비게이션 선택자
+           ('.exmplae-test-site-nav a {}')가 무효화됨
+           헤더부분 리팩토링할 시간이 날 때까지 !important로 덮어쓸 것
+    @created_at: 2017-06-20
+*/
+.example-test-site-nav a {
+    color: #bada55 !important;
+}
