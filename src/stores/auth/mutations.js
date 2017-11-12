@@ -1,10 +1,3 @@
-/*
-    @name: auth/mutations.js
-    @desc: Auth스토어 변이 모듈
-    @author: Evan Moon
-    @created_at: 2017.08.27
-*/
-
 import APIService from 'src/services/API.service';
 import CookieService from 'src/services/Cookie.service';
 

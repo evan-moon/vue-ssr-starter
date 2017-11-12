@@ -1,9 +1,3 @@
-/*
-    @name: API.service.js
-    @desc: Pixelstairs API 싱글톤 서비스
-    @author: Evan Moon
-    @created_at: 2017.08.27
-*/
 import axios from 'axios';
 import Q from 'q';
 

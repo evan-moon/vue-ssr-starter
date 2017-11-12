@@ -1,9 +1,3 @@
-/*
-    @name: Cookie.service.js
-    @desc: Cookie 인코딩, 디코딩 -> 저장 삭제 서비스
-    @author: Evan Moon
-    @created_at: 2017.09.02
-*/
 import Cookie from 'js-cookie';
 import Base64Service from 'src/services/Base64.service';
 

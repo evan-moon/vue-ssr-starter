@@ -1,10 +1,3 @@
-/*
-    @name: app.js
-    @desc: app init 파일
-    @author: Evan Moon
-    @created_at: 2017.08.19
-*/
-
 import Vue from 'vue';
 import App from './App.vue';
 import store from './stores/store';

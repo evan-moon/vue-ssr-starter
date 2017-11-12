@@ -1,9 +1,3 @@
-/*
-    @name: AuthGrade.js
-    @desc: 회원 등급 active 인증 페이지
-    @author: Evan Moon
-    @created_at: 2017.09.11
-*/
 import moment from 'moment';
 import APIService from 'src/services/API.service';
 

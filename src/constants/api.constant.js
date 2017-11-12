@@ -1,10 +1,3 @@
-/**
- * @name: api.constant.js
- * @desc: API 상수목록
- * @author: Evan Moon
- * @created_at: 2017.11.12
- */
-
 export const API_LIST = {
     users: () => {
         const prefix = 'members';

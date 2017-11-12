@@ -1,10 +1,3 @@
-/*
-    @name: Base64.service.js
-    @desc: Base64 인코딩 디코딩 클래스
-    @author: Evan Moon
-    @created_at: 2017.09.02
-*/
-
 class Base64Service {
     constructor () {
         this._KEY_STR = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';

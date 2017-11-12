@@ -1,10 +1,3 @@
-/*
-    @name: auth/actions.js
-    @desc: Auth스토어 액션 생성자
-    @author: Evan Moon
-    @created_at: 2017.08.27
-*/
-
 import Q from 'q';
 import APIService from 'src/services/API.service';
 

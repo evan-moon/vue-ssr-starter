@@ -1,10 +1,3 @@
-/*
-    @name: Signup.js
-    @desc: 회원가입 페이지 컴포넌트
-    @author: Evan Moon
-    @created_at: 2017.09.02
-*/
-
 import { mapActions } from 'vuex';
 import APIService from 'src/services/API.service';
 import SignupForm from 'src/components/forms/Signup.form.vue';

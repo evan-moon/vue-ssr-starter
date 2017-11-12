@@ -67,6 +67,7 @@ export default {
                 name: 'Menu3',
                 link: 'home',
             }],
+            msg: 'This is Global Footer',
         };
     },
 };

@@ -1,10 +1,3 @@
-/*
-    @name: Example.plugin.js
-    @desc: 플러그인 예시
-    @author: Evan Moon
-    @created_at: 2017.11.12
-*/
-
 class Example {
 
     init (router, store, permissions) {

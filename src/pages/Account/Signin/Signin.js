@@ -1,9 +1,3 @@
-/*
-    @name: Signin.js
-    @desc: 로그인 페이지 컴포넌트
-    @author: Evan Moon
-    @created_at: 2017.08.29
-*/
 import { mapActions } from 'vuex';
 import { LOGO } from 'src/constants';
 import APIService from 'src/services/API.service';

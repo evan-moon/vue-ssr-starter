@@ -1,10 +1,3 @@
-/*
-    @name: server-entry.js
-    @desc: 서버 사이드 렌더링 초기화 파일 with express
-    @author: Evan Moon
-    @created_at: 2017.08.21
-*/
-
 /* Main application bootstrapper */
 import { createApp } from './app';
 import CookieService from 'src/services/Cookie.service';

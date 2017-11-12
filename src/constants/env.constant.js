@@ -1,10 +1,3 @@
-/*
-    @name: env.constant.js
-    @desc: env에 따라 변경되는 상수 집합
-    @author: Evan Moon
-    @created_at: 2017.09.11
-*/
-
 const env = process.env.NODE_ENV;
 
 function get (env) {

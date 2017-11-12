@@ -1,9 +1,3 @@
-/*
-    @name: AuthPassword
-    @desc: 패스워드 인증 페이지
-    @author: Evan moon
-    @created_at: 2017.09.12
-*/
 import { mapGetters } from 'vuex';
 import APIService from 'src/services/API.service';
 

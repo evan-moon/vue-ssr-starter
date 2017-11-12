@@ -70,6 +70,7 @@ export default {
     data () {
         return {
             logoSrc: LOGO,
+            msg: 'This is Global Header',
         };
     },
     computed: {

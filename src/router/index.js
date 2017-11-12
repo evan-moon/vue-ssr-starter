@@ -1,10 +1,3 @@
-/*
-    @name: router/index.js
-    @desc: 픽셀스테어스 라우팅 모듈
-    @author: Evan Moon
-    @created_at: 2017.08.26
-*/
-
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import VueMeta from 'vue-meta';
