@@ -15,11 +15,14 @@
 </style>
 
 <script>
+import config from 'src/app.config.json';
+const { app, copyrights, og, ld } = config;
+
 export default {
     name: 'App',
     metaInfo: {
         titleTemplate: (titleChunk) => {
-            return titleChunk ? `${titleChunk} - {{SiteName}}` : '{{SiteName}} :: {{SiteDescription}}';
+            return titleChunk ? `${titleChunk} - ${app.name}` : `${app.name} :: ${app.description}`;
         },
         noscript: [{
             innerHTML: 'This website requires JavaScript.',
@@ -46,43 +49,34 @@ export default {
             name: 'fragment',
             content: '!',
         }, {
+            name: 'mobile-web-app-capable',
+            content: 'yes',
+        }, {
             vmid: 'title',
             name: 'title',
-            content: '{{SiteName}} :: {{SiteDescription}}',
+            content: `${app.name} :: ${app.description}`,
         }, {
             vmid: 'description',
             name: 'description',
-            content: '{{SiteDescription}}',
+            content: app.description,
         }, {
             name: 'author',
-            content: '{{Author}}',
+            content: app.author,
         }, {
             name: 'subject',
-            content: '{{Subject}}',
+            content: app.subject,
         }, {
             name: 'publisher',
-            content: '{{Published by}}',
-        }, {
-            name: 'developed',
-            content: '{{Author}}',
-        }, {
-            name: 'designed',
-            content: '{{Designer}}',
+            content: app.publisher,
         }, {
             name: 'robots',
             content: 'index,follow',
         }, {
             name: 'copyright',
-            content: 'copyrights {{Year}} {{OwnerName}}',
+            content: `copyrights ${copyrights.year} ${copyrights.owner}`,
         }, {
             name: 'keywords',
-            content: '{{Keywords with comma like (a,b,c)}}',
-        }, {
-            name: 'mobile-web-app-capable',
-            content: 'yes',
-        }, {
-            name: 'theme-color',
-            content: '{{ThemeColor, it will be changed addressbar in Android}}',
+            content: app.keywords,
         }, {
             vmid: 'og:type',
             property: 'og:type',
@@ -90,36 +84,36 @@ export default {
         }, {
             vmid: 'og:title',
             property: 'og:title',
-            content: '{{SiteName}} :: {[SiteDescription]}',
+            content: `${og.title} :: ${og.description}`,
         }, {
             vmid: 'og:description',
             property: 'og:description',
-            content: '{{SiteDescription}}',
+            content: og.description,
         }, {
             vmid: 'og:image',
             property: 'og:image',
-            content: '{{ogImageSrc}}',
+            content: og.image,
         }, {
             vmid: 'og:url',
             property: 'og:url',
-            content: '{{ogUrl}}',
+            content: og.url,
         }],
         script: [{
             innerHTML: `{
                 "@context": "http://schema.org",
                 "@type": "Organization",
-                "name": "{{SiteName}}",
-                "url": "https://{{host}}.com",
+                "name": ${app.name},
+                "url": "https://${ld.host}.com",
                 "sameAs": [
-                    "https://www.{{host}}.com"
+                    "https://www.${ld.host}.com"
                 ],
-                "brand": "{{Owner}}",
-                "description": "{{SiteDescription}}",
-                "logo": "{{Logo}}",
+                "brand": "${ld.owner}",
+                "description": "${app.description}",
+                "logo": "${ld.logo}",
                 "contactPoint": {
                     "@type": "ContactPoint",
-                    "telephone": "{{tel}}",
-                    "email": "{{email}}",
+                    "telephone": "${ld.tel}",
+                    "email": "${ld.email}",
                     "contactType": "Customer service"
                 }
             }`,

@@ -1,0 +1,29 @@
+{
+    "app": {
+        "name": "My Application",
+        "description": "This is a web application which written using Vue.js and node.js",
+        "author": "AuthorName",
+        "subject": "Subject",
+        "publisher": "Publisher",
+        "keywords": "keyword1, keyword2, keyword3",
+        "generator": "webpack",
+        "email": "vue@js.com"
+    },
+    "copyrights": {
+        "year": "2017",
+        "owner": "OwnerName"
+    },
+    "og": {
+        "title": "My Application",
+        "description": "This is a web application which written using Vue.js and node.js",
+        "image": "src/assets/avatar.png",
+        "url": "https://url.url"
+    },
+    "ld": {
+        "host": "host",
+        "logo": "logo",
+        "tel": "tel",
+        "email": "email",
+        "owner": "owner"
+    }
+}
