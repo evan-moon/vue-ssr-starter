@@ -34,6 +34,12 @@ export default {
             'http-equiv': 'Pragma',
             content: 'no-cache',
         }, {
+            'http-equiv': 'X-UA-Compatible',
+            content: 'IE=edge',
+        }, {
+            'http-equiv': 'imagetoolbar',
+            content: 'no',
+        }, {
             name: 'viewport',
             content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui, shrink-to-fit=no, viewport-fit=cover',
         }, {
