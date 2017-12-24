@@ -35,7 +35,7 @@ export default {
             content: 'no-cache',
         }, {
             name: 'viewport',
-            content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui, shrink-to-fit=no',
+            content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui, shrink-to-fit=no, viewport-fit=cover',
         }, {
             name: 'fragment',
             content: '!',
