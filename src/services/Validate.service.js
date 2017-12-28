@@ -115,4 +115,4 @@ class ValidateService {
 const instance = new ValidateService();
 export default instance;
 
-Validator.updateDictionary(instance.getValidateMsgs());
+Validator.localize(instance.getValidateMsgs());
