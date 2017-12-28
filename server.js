@@ -123,9 +123,8 @@ else {
 }
 
 if(isLocal) {
-    let host = 'local.pixelstairs.com';
-    app.listen(port, host, () => {
-        console.log(`server started at ${host}:${port}`);
+    app.listen(port, () => {
+        console.log(`server started at server:${port}`);
     });
 }
 else {
