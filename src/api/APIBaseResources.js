@@ -1,4 +1,5 @@
 import axios from 'axios';
+import apiList from 'src/constants/api.constant';
 import Q from 'q';
 
 import {CUSTOM_HEADER_PREFIX} from '../constants';
@@ -6,8 +7,12 @@ import {API_BASE_URL} from 'src/constants/env.constant';
 import {API_LIST} from '../constants/api.constant';
 
 export class APICoreResources {
-    constructor () {
-        this._axios = axios.create({baseURL: API_BASE_URL});
+    constructor (options) {
+    	
+        this._axios = axios.create({
+			baseURL: options.API_BASE_URL,
+			
+        });
     }
 
     get (api, params) {
