@@ -123,8 +123,10 @@ else {
 }
 
 if(isLocal) {
-    app.listen(port, () => {
-        console.log(`server started at server:${port}`);
+    // Regist local url to your /etc/hosts
+    let host = 'local.test.com';
+    app.listen(port, host, () => {
+        console.log(`server started at ${host}:${port}`);
     });
 }
 else {

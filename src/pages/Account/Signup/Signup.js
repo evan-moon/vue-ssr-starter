@@ -8,6 +8,16 @@ export default {
     components: {
         SignupForm,
     },
+    metaInfo () {
+        return {
+            title: `Sign up`,
+            meta: [{
+                vmid: 'title', property: 'title', content: 'Sign up',
+            }, {
+                vmid: 'og:title', property: 'og:title', content: 'Signup',
+            }],
+        };
+    },
     data () {
         return {
             logo: LOGO,
