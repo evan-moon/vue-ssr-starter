@@ -1,5 +1,4 @@
 import axios from 'axios';
-import apiList from 'src/constants/api.constant';
 import Q from 'q';
 
 // import apiList from 'src/constants/api.constant';

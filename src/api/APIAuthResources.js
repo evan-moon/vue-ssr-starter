@@ -1,9 +1,5 @@
 import APIBaseResources from './APIBaseResources';
-<<<<<<< HEAD
 import { authAPIList } from './APIAuthResources.config';
-=======
-import authAPIList from './APIAuthResources.config';
->>>>>>> b48451f29dd4fae14b91141a80e708e925c54a90
 
 class APIAuthResources extends APIBaseResources {
     constructor () {
@@ -12,19 +8,12 @@ class APIAuthResources extends APIBaseResources {
             apiList: authAPIList,
         });
     }
-<<<<<<< HEAD
     signinAccount (payload) {
-=======
-    signinAccount () {
->>>>>>> b48451f29dd4fae14b91141a80e708e925c54a90
         /**
          * @function { signinAccount }
          * @summary 회원 로그인 로직 처리 함수
          */
-<<<<<<< HEAD
         return this.post(this.apiList.signin, payload);
-=======
->>>>>>> b48451f29dd4fae14b91141a80e708e925c54a90
     }
 
     signoutAccount () {
@@ -62,10 +51,7 @@ class APIAuthResources extends APIBaseResources {
          */
     }
 }
-<<<<<<< HEAD
 
 const apiAuthResources = new APIAuthResources();
 
 export default apiAuthResources;
-=======
->>>>>>> b48451f29dd4fae14b91141a80e708e925c54a90
