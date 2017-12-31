@@ -1,6 +1,6 @@
 import { mapActions } from 'vuex';
 import { LOGO } from 'src/constants';
-import APIService from 'src/services/API.service';
+import APIAuthResources from 'src/api/APIAuthResources';
 import SigninForm from 'src/components/forms/Signin.form.vue';
 
 export default {
@@ -17,7 +17,7 @@ export default {
     methods: {
         postData (authData) {
             this.isBusy = true;
-            APIService.resource('users.signin').post(authData)
+            APIAuthResources.signinAccount(authData)
             .then(res => {
                 this.setToken({
                     accessToken: res.result.access_token,
