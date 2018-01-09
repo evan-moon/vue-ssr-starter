@@ -1,10 +1,11 @@
 import APIBaseResources from './APIBaseResources';
+import { API_BASE_URL } from 'src/constants/env.constant';
 import { authAPIList } from './APIAuthResources.config';
 
 class APIAuthResources extends APIBaseResources {
     constructor () {
         super({
-            baseURL: '',
+            baseURL: API_BASE_URL,
             apiList: authAPIList,
         });
     }

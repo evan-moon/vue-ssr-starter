@@ -9,7 +9,7 @@ import Q from 'q';
 export default class APICoreResources {
     constructor (options) {
         this._axios = axios.create({
-            baseURL: options.API_BASE_URL,
+            baseURL: options.baseURL || '',
         });
         this.apiList = options.apiList;
     }
@@ -37,9 +37,10 @@ export default class APICoreResources {
             });
 
         return defer.promise;
-    };
+    }
 
     post (api, data) {
+        console.log(`api -> ${api}`, data);
         let defer = Q.defer();
 
         this._axios.post(api, data)
